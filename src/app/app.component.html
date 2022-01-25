@@ -1,0 +1,14 @@
+<h4 class='ml-2' style='color:#c71da2'>Authetication using AWS cognito </h4>
+
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-8 offset-sm-2">
+               <div *ngIf="message.text" [ngClass]="{ 'alert': message, 'alert-success': message.type === 'success', 'alert-danger': message.type === 'error' }">{{message.text}}</div>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>
+
+
